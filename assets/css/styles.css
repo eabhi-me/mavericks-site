@@ -32,8 +32,8 @@
 body{
     font-family: "Montserrat", sans-serif;
     line-height: 1.7;
-    color: var(--color-white);
-    background-color: var(--color-black);
+    color: var(--color-black);
+    background-color: var(--color-white);
     
 }
 
@@ -47,8 +47,162 @@ body{
     color: #f75842;
 }
 .nav-link:hover, .dropdown-item:hover {
-    color: white !important;
+    color: rgb(12, 11, 11) !important;
 }
 .navbar-brand:hover{
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
 }
+
+/* icon-add */
+.icon-add{
+    font-size: 5rem;
+    padding-bottom: 2%;
+    color:rgb(118, 210, 247)
+}
+.icon-add:hover{
+    transition: ease-in-out 0.3s;
+    transform:scale(1.2);
+}
+
+.social{
+    text-align: center;
+}
+.social-icon-me{
+    margin: 2%;
+    font-size: 1.5rem;
+}
+.social-icon-me:hover{
+    color: #f4f5f7;
+    transition: ease-in-out 0.1s;
+    transform:scale(1.2);
+}
+.contact-us{
+    text-align: center;
+    padding:2%
+}
+.contact-heading{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    padding: 2%;
+}
+.footer-box{
+    background-color:rgba(26, 27, 28, 0.932);
+    padding: 1.2% 0%;
+    margin:0;
+}
+
+.copyright{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: 0;
+    color:#f4f5f7
+}
+.footer {
+    background: #313030;
+    color: white;
+    padding: 20px 0;
+}
+.footer-logo {
+    width: 100px; /* Set logo size */
+    height: auto;
+}
+
+
+
+
+
+
+/*############# members ####################*/
+.member{
+    margin-top: 3rem;
+}
+
+.home-container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-card{
+            position: relative;
+            width: 220px;
+            height: 220px;
+            background-color: rgb(219, 102, 52);
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
+            transition: all .4s;
+            margin: 0 20px;
+        }
+        .profile-card:hover{
+            border-radius: 10px;
+            height: 300px;
+        }
+        .profile-card .img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .profile-card:hover img{
+            border-radius: 10px;
+            transform: translateY(-70px);
+        }
+        .img img{
+            object-fit: fill;
+            width: 100%;
+            border-radius: 50%;
+            transition: all .4s;
+            z-index: 99;
+        }
+        .caption{
+            text-align: center;
+            transform: translateY(-90px);
+            opacity: 0;
+            pointer-events: none;
+            transition: all .5s;
+        }
+        .profile-card:hover .caption{
+            opacity: 1;
+            pointer-events: all;
+        }
+        .caption h3{
+            font-size: 19px;
+            color: white;
+            font-weight: 600;
+        }
+        .caption p{
+            font-size: 15px;
+            font-weight: 500;
+            margin: 2px 0 10px 1;
+        }
+        .caption .social-links i{
+            font-size: 21px;
+            margin: 0 3px;
+            cursor: pointer;
+            color: white;
+            transition: all .4s;
+        }
+        .caption .social-links i:hover{
+            color: #eeba9e;
+        }
+
+
+.profile-card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    .profile-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .social-links a {
+        color: #007bff;
+        font-size: 18px;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .social-links a:hover {
+        color: #0056b3;
+    }
+    
